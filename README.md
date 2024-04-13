@@ -14,7 +14,8 @@ Key Features:
 5.	Integration with Fitness Trackers: To add exercise data into the user's overall nutrition and health profile, SmartEats interacts with fitness trackers or activity monitors.
 
 Target Audience:
-The SmartEats Nutrition Tracker is intended for anyone who want to measure their nutritional consumption, make dietary improvements, and reach their wellness and health objectives. The program serves a broad spectrum of users, such as fitness fanatics, people who are health-conscious, and people who have particular dietary needs or medical issues.
+The SmartEats Nutrition Tracker is intended for anyone who want to measure their nutritional consumption, make dietary improvements, and reach their wellness and health objectives. The program serves a broad spectrum of users, such as fitness fanatics, people who are health-conscious, and people who have particular dietary needs or medical issues.It typically allows users to input their meals and snacks, track their calorie intake and sometimes monitor macro nutrients like protein, carbohydrates and fats..
+
 
 Benefits: 
 - Supports users in reaching their nutritional objectives 
