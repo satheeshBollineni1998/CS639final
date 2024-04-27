@@ -10,8 +10,9 @@ Key Features:
 1.	Food Diary: Users can record their meals and snacks for the duration of the day, along with information about ingredients, portion amounts, and meal timings.
 2.	Nutritional Analysis: The app offers thorough calorie, macronutrient, vitamin, and mineral analyses of meals that have been tracked.
 3.	Customizable Goals: Depending on their dietary needs, health goals, or dietary preferences, users can create individualized nutritional goals.
-4.	Allergen and Dietary Restriction Tracking: To make sure that their meals meet their unique dietary requirements, users can keep track of allergens and dietary restrictions. When meals are logged and there are possible allergies or components that contradict, the app issues warnings or alarms.
-5.	Integration with Fitness Trackers: To add exercise data into the user's overall nutrition and health profile, SmartEats interacts with fitness trackers or activity monitors.
+4.	Diet plans: Pre-planned Dietary meals are shown in this section as per goals customised by user.
+5.	Calorie Tracking: Calories from food intake and excercise data are tracked all together.
+6.  Meal planning: Planning meals accordingly by customising the dates and time of meal.
 
 Target Audience:
 The SmartEats Nutrition Tracker is intended for anyone who want to measure their nutritional consumption, make dietary improvements, and reach their wellness and health objectives. The program serves a broad spectrum of users, such as fitness fanatics, people who are health-conscious, and people who have particular dietary needs or medical issues.It typically allows users to input their meals and snacks, track their calorie intake and sometimes monitor macro nutrients like protein, carbohydrates and fats..
@@ -25,3 +26,7 @@ Benefits:
 
 Conclusion:
 SmartEats Nutrition Tracker is an essential tool for anyone looking to take control of their diet and improve their overall health and wellness. With its user-friendly interface, comprehensive features, and personalized approach to nutrition tracking, SmartEats empowers users to make smarter eating choices and achieve their dietary goals effectively.
+
+LINK TO FIGMA ( DESIGN LINK ):
+https://www.figma.com/file/qIHe4UxkP8JE7vzDNbsDyX/SmartEats-Nutrition-Tracker?type=design&node-id=3-24&mode=design&t=tKbgk5OOW0V51EDa-0
+
