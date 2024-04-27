@@ -2,16 +2,26 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:theme="@style/AppTheme">
 
     <TextView
         android:id="@+id/textViewHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Smart Eats Nutrition Tracker"
+        android:text="NutriWise"
         android:textSize="24sp"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"/>
+
+    <ImageView
+        android:layout_width="474dp"
+        android:layout_height="1000dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:alpha="0.08"
+        app:srcCompat="@mipmap/n_logo" />
 
     <EditText
         android:id="@+id/editTextEmail"
@@ -37,6 +47,17 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/editTextPassword"
         android:text="Login"
-        android:layout_marginTop="24dp"/>
+        android:layout_marginTop="24dp"
+        android:textColor="@color/darkerBeige"
+        android:backgroundTint="@color/green"/>
+
+    <TextView
+        android:id="@+id/tv_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="navigateToSignup"
+        android:text="Don't have an account? Sign up here."
+        android:textColor="@color/green"
+        android:layout_marginTop="280dp"/>
 
 </RelativeLayout>

@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="Nutrition Tracker"
+            android:text="NutriWise"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -82,7 +82,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Add Food"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:backgroundTint="@color/green"/>
         <Space
             android:layout_width="16dp"
             android:layout_height="wrap_content" />
@@ -94,7 +95,8 @@
             android:layout_weight="1"
             android:text="View Log"
             android:textSize="16sp"
-            android:visibility="visible" />
+            android:visibility="visible"
+            android:backgroundTint="@color/green"/>
 
 
 
@@ -111,7 +113,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Meal Plan"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:backgroundTint="@color/green"/>
         </LinearLayout>
 
 </LinearLayout>

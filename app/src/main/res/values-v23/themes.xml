@@ -6,4 +6,16 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
     </style>
+
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here -->
+        <item name="android:windowBackground">@color/white</item> <!-- Set background color -->
+        <item name="colorPrimary">@color/lightBeige</item> <!-- Set primary color -->
+        <item name="colorPrimaryDark">@color/darkerBeige</item> <!-- Set primary dark color -->
+        <item name="colorAccent">@color/green</item> <!-- Set accent color -->
+        <item name="android:buttonTint">@color/green</item> <!-- Set button color -->
+    </style>
+
+
 </resources>
