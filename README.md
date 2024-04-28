@@ -30,3 +30,5 @@ SmartEats Nutrition Tracker is an essential tool for anyone looking to take cont
 LINK TO FIGMA ( DESIGN LINK ):
 https://www.figma.com/file/qIHe4UxkP8JE7vzDNbsDyX/SmartEats-Nutrition-Tracker?type=design&node-id=3-24&mode=design&t=tKbgk5OOW0V51EDa-0
 
+LINK TO GOOGLEDOCS:
+https://docs.google.com/document/d/11wvhDiZuhtH1KOXndx75QpGH64fd8HyR6oVbbpoYCNw/edit?usp=sharing
