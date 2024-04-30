@@ -1,44 +1,64 @@
 package com.example.myapplication2
-
+import com.example.myapplication2.R
+import com.example.myapplication2.FoodItem
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import com.example.myapplication2.databinding.FragmentSecondBinding
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.database.*
 
-/**
- * A simple [Fragment] subclass as the second destination in the navigation.
- */
 class SecondFragment : Fragment() {
 
-    private var _binding: FragmentSecondBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var adapter: FoodItemAdapter
+    private lateinit var database: FirebaseDatabase
+    private lateinit var reference: DatabaseReference
 
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
+        val view = inflater.inflate(R.layout.fragment_second, container, false)
 
-        _binding = FragmentSecondBinding.inflate(inflater, container, false)
-        return binding.root
+        recyclerView = view.findViewById(R.id.recyclerView)
+        recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        adapter = FoodItemAdapter()
+        recyclerView.adapter = adapter
 
+        // Fetch data from Firebase Realtime Database
+        database = FirebaseDatabase.getInstance()
+        reference = database.getReference("food_items")
+
+        reference.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                val foodItems = mutableListOf<FoodItem>()
+
+                for (snapshot in dataSnapshot.children) {
+                    val foodItem = snapshot.getValue(FoodItem::class.java)
+                    foodItem?.let { foodItems.add(it) }
+                }
+
+                adapter.setFoodItems(foodItems)
+            }
+
+            override fun onCancelled(databaseError: DatabaseError) {
+                Log.e(TAG, "Failed to read value.", databaseError.toException())
+            }
+        })
+
+        return view
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+    companion object {
+        private const val TAG = "SecondFragment"
 
-//        binding.buttonSecond.setOnClickListener {
-//            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
-//        }
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+        // Optional: Create a newInstance() method if you need to pass arguments to the fragment
+        fun newInstance(): SecondFragment {
+            return SecondFragment()
+        }
     }
 }
