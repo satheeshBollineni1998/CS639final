@@ -1,6 +1,6 @@
 package com.example.myapplication2
+
 import android.app.AlertDialog
-import android.content.Context
 import android.os.Bundle
 import android.text.InputType
 import android.view.LayoutInflater
@@ -44,11 +44,14 @@ class FirstFragment : Fragment() {
         databaseReference.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 val calories = dataSnapshot.child("calories").getValue(String::class.java)
-                val macros = dataSnapshot.child("macros").getValue(String::class.java)
+                val macrosSnapshot = dataSnapshot.child("macros")
 
+                val protein = macrosSnapshot.child("protein").getValue(String::class.java)
+                val fat = macrosSnapshot.child("fat").getValue(String::class.java)
+                val carbs = macrosSnapshot.child("carbs").getValue(String::class.java)
 
                 caloriesTextView.text = "Calories: $calories"
-                macrosTextView.text = "Macros: $macros"
+                macrosTextView.text = "Macros: Protein - $protein, Fat - $fat, Carbs - $carbs"
             }
 
             override fun onCancelled(databaseError: DatabaseError) {
@@ -61,7 +64,8 @@ class FirstFragment : Fragment() {
         }
 
         binding.btnMealPlan.setOnClickListener {
-            navigateToSecondFragment()
+            // Add your navigation logic here
+            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
     }
 
@@ -90,10 +94,6 @@ class FirstFragment : Fragment() {
             .addOnFailureListener {
                 Toast.makeText(requireContext(), "Failed to add food item: ${it.message}", Toast.LENGTH_SHORT).show()
             }
-    }
-
-    private fun navigateToSecondFragment() {
-        findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
     }
 
     override fun onDestroyView() {
