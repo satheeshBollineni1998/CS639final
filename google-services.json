@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "587450610508",
+    "project_id": "nutriwise-b286b",
+    "storage_bucket": "nutriwise-b286b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587450610508:android:876520695036e2925b95e9",
+        "android_client_info": {
+          "package_name": "com.example.myapplication2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1VYGadFx3DOCE3QuPb_FEjrdKdfvniR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -15,13 +15,16 @@
             app:destination="@id/FirstFragment" />
 
     </fragment>
-    
+
     <fragment
         android:id="@+id/FirstFragment"
         android:name="com.example.myapplication2.FirstFragment"
-        android:label="@string/first_fragment_label"
+        android:label="Food dairy"
         tools:layout="@layout/fragment_first">
 
+        <action
+            android:id="@+id/action_FirstFragment_to_MealHistoryFragment"
+            app:destination="@+id/MealHistoryFragment" />
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
@@ -46,5 +49,12 @@
         <action
             android:id="@+id/action_ThirdFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MealHistoryFragment"
+        android:name="com.example.myapplication2.MealHistoryFragment"
+        android:label="Meal History"
+        tools:layout="@layout/fragment_meal_history">
+
     </fragment>
 </navigation>

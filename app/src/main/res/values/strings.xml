@@ -27,5 +27,9 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
-    <string name="first_fragment_label">Smart eats</string>
+    <string name="first_fragment_label"> </string>
+    <string name="prompt_login">Already have an account? login</string>
+    <string name="prompt_register">Don\'t have an account? Register</string>
+    <string name="action_register">Register\n</string>
+    <string name="action_login">Login\n</string>
 </resources>

@@ -6,4 +6,5 @@
     <color name="lightBeige">#F5F5DC</color>
     <color name="darkerBeige">#D2B48C</color>
     <color name="green">#008000</color>
+    <color name="colorPrimary">#50F056</color>
 </resources>

@@ -13,13 +13,17 @@
         android:text="NutriWise"
         android:textSize="24sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="32dp"/>
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="38dp"/>
 
     <ImageView
-        android:layout_width="474dp"
-        android:layout_height="1000dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="16dp"
+        android:layout_width="550dp"
+        android:layout_height="600dp"
+        android:layout_below="@+id/buttonLogin"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="46dp"
         android:alpha="0.08"
         app:srcCompat="@mipmap/n_logo" />
 
@@ -52,12 +56,13 @@
         android:backgroundTint="@color/green"/>
 
     <TextView
-        android:id="@+id/tv_signup"
+        android:id="@+id/textViewRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="navigateToSignup"
-        android:text="Don't have an account? Sign up here."
-        android:textColor="@color/green"
-        android:layout_marginTop="280dp"/>
+        android:layout_below="@id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Don't have an account? Register now"
+        android:textColor="@color/green" />
 
 </RelativeLayout>
