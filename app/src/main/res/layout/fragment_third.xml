@@ -1,0 +1,54 @@
+<!-- fragment_nutrition_tracker.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img">
+
+    <!-- TextView to display calories -->
+    <TextView
+        android:id="@+id/caloriesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calories: 1500"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- TextView to display protein -->
+    <TextView
+        android:id="@+id/proteinTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Protein: 30g"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/caloriesTextView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- TextView to display fat -->
+    <TextView
+        android:id="@+id/fatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fat: 20g"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/proteinTextView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- TextView to display carbs -->
+    <TextView
+        android:id="@+id/carbsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carbs: 40g"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/fatTextView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
