@@ -32,3 +32,5 @@ https://www.figma.com/file/qIHe4UxkP8JE7vzDNbsDyX/SmartEats-Nutrition-Tracker?ty
 
 LINK TO GOOGLEDOCS:
 https://docs.google.com/document/d/11wvhDiZuhtH1KOXndx75QpGH64fd8HyR6oVbbpoYCNw/edit?usp=sharing
+
+Youtube Link: https://youtube.com/shorts/e2JEl367ep8?feature=share
